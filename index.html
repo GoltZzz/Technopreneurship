@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-32x32-min.png"
+    />
+    <title>Don's Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <!--Header-->
+    <header>
+      <div class="navbar">
+        <div class="nav-brand">
+          <a href="#"
+            ><img
+              src="./images/Dahlialogo-min.png"
+              alt="Dahlia's Sweets Logo"
+              class="logo"
+              loading="lazy"
+          /></a>
+        </div>
+        <input type="checkbox" id="checkItem" />
+        <div class="nav-btn">
+          <label for="checkItem">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#popular">Persons</a>
+            <ul class="dropdown-menu">
+              <li><a href="#popular">Don</a></li>
+              <li><a href="#popular">Jhuniben</a></li>
+              <li><a href="#popular">Patrick</a></li>
+              <li><a href="#popular">Jayson</a></li>
+              <li><a href="#popular">Aucena</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#avail-now"></a>Menu
+            <ul class="dropdown-menu">
+              <li><a href="#avail-now">Graham Balls</a></li>
+              <li><a href="#avail-now">Dilis Sweet & Spicy</a></li>
+              <li><a href="#avail-now">Mini Donuts</a></li>
+              <li><a href="#avail-now">Banana chips</a></li>
+              <li><a href="#avail-now">Polvoron</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#history"></a>About
+            <ul class="dropdown-menu">
+              <li><a href="#history">Our History</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact-US">Contact Us</a></li>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+          <li><i class="fa-solid fa-user"></i></li>
+          <li>
+            <button class="btn flex justify-content align-items flex">
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!--Hero-->
+    <main>
+      <section id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="perfect">
+                <h1>
+                  <span class="peCa">Perfect Foods for</span>
+
+                  <span class="peDay">Perfect day</span>
+                </h1>
+                <p class="special">
+                  Specially made for you with a secret recipe and love&comma;
+                  which make every bite so delicious.
+                </p>
+                <button class="order-now align-items justify-content flex">
+                  Order Now
+                </button>
+              </div>
+            </div>
+            <div class="hero-video">
+              <video autoplay loop muted>
+                <source src="./video/herovideo.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Avail now-->
+      <section id="avail-now" class="">
+        <div class="container">
+          <div>
+            <div class="availnow">
+              <h2 class="a-now ">Available Now</h2>
+              <p class="food-choices">Food menu choices in our shop</p>
+
+              <div class="discount-card-container">
+                <a href="#popup" class="discount-card">Get 10% off!</a>
+              </div>
+              
+              <div id="popup" class="popup">
+                <div class="popup-content">
+                  <h2>Special Discount</h2>
+                  <p>Use the code <span id="D-ten"> "DISCOUNT10"</span> to get 10% off your purchase!</p>
+                  <a href="#avail-now" class="close-btn">Close</a>
+                </div>
+              </div>
+              
+          
+          <div class="row avail">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="available-now-0">
+                <img
+                  src="./images/cakes.jpg"
+                  alt="cake"
+                  class="img-availnow"
+                  loading="lazy"
+                />
+                <h3 class="aNow">Graham Balls</h3>
+                <button class="a-buy">Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="available-now-0">
+                <img
+                  src="./images/muffins.jpg"
+                  alt="muffin"
+                  class="img-availnow"
+                  loading="lazy"
+                />
+                <h3 class="aNow">Dilis SW & SP</h3>
+                <button class="a-buy">Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="available-now-0">
+                <img
+                  src="./images/donuts.jpg"
+                  alt="donut"
+                  class="img-availnow"
+                  loading="lazy"
+                />
+                <h3 class="aNow">Mini Donuts</h3>
+                <button class="a-buy">Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="available-now-0">
+                <img
+                  src="./images/croisant.jpg"
+                  alt="croisant"
+                  class="img-availnow"
+                  loading="lazy"
+                />
+                <h3 class="aNow">Polvoron</h3>
+                <button class="a-buy">Buy</button>
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--We serve online-->
+      <section id="serve" class="py-32">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-6">
+              <div class="">
+                <h2 class="online-h2 flex">We serve online orders</h2>
+                <p class="online-p flex">
+                  Order food online namely the process of ordering food through
+                  the website or the eating application itself. Customers can
+                  choose the food ordered or taken.
+                </p>
+                
+                <button class="Onow">Order Now</button>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-6">
+              <div class="online-img">
+                <img
+                  src="./images/online.jpg"
+                  alt="Online Ordering"
+                  class="online-img"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!--History -->
+ <section class="page-section" id="history">
+  <div class="container">
+      <div class="text-center">
+          <h2 class="section-heading text-uppercase">Our History</h2>
+      </div>
+      <ul class="timeline">
+          <li>
+              <div class="timeline-image"><img class="timeline-image" src="./images/history.jpg" alt="History Image"></div>
+              <div class="timeline-panel">
+                  <div class="timeline-heading">
+                      <h4>March 2024</h4>
+                  </div>
+                  <div class="timeline-body"><p class="text-muted">Don's Shop, a beloved confectionery paradise, began its delightful journey in April 2024. Founded with a passion for creating mouthwatering treats, Don and friends quickly captured the hearts of dessert enthusiasts at NorthEastern College. </p></div>
+              </div>
+          </li>
+          <li class="timeline-inverted">
+              <div class="timeline-image"><img class=" timeline-image" src="./images/usa.jpg" alt="Restaurant"></div>
+              <div class="timeline-panel">
+                  <div class="timeline-heading">
+                      <h4>April 2024</h4>
+                  <div class="timeline-body"><p class="text-muted">
+                    In the Month of April, Don's Shop expanded its reach outside the school.</p></div>
+              </div>
+          </li>
+          <li class="timeline-inverted">
+              <div class="timeline-image"><img class="timeline-image" src="./images/globe.jpg" alt="Globe"></div>
+              <div class="timeline-panel">
+                  <div class="timeline-heading">
+                      <h4>Present</h4>
+                  </div>
+                  <div class="timeline-body"><p class="text-muted">
+                    As of the present day, Don's Shop continues to sell until the end of May.
+                  </p></div>
+              </div>
+          </li>
+      </ul>
+  </div>
+</section>
+
+
+      <!--What do they say-->
+      <section id="say" class="flex">
+        <div class="container">
+          <h2 class="pop">What do they say</h2>
+          <div class="slider">
+            <input type="radio" name="testimonial" id="t-1" />
+            <input type="radio" name="testimonial" id="t-2" />
+            <input type="radio" name="testimonial" id="t-3" checked />
+            <input type="radio" name="testimonial" id="t-4" />
+            <input type="radio" name="testimonial" id="t-5" />
+            <div class="testimonials">
+              <label class="item" for="t-1">
+                <img
+                  src="./images/johndoe.jpg"
+                  alt="man"
+                  loading="lazy"
+                  class="img-say"
+                />
+                <h2 class="caption">John Doe</h2>
+                <img
+                  src="./images/5-star.webp"
+                  alt="Five Star"
+                  loading="lazy"
+                  width="150"
+                />
+                <p>
+                  &quot;Masarap.&quot;
+                </p>
+              </label>
+              <label class="item" for="t-2">
+                <img
+                  src="./images/janedoe.jpg"
+                  alt="woman"
+                  loading="lazy"
+                  class="img-say"
+                />
+                <h2 class="caption">Jane Doe</h2>
+                <img
+                  src="./images/5-star.webp"
+                  alt="Five Star"
+                  loading="lazy"
+                  width="150"
+                />
+                <p>
+                  &quot;Masarap.&quot;
+                </p>
+              </label>
+              <label class="item" for="t-3">
+                <img
+                  src="./images/andrea smith.jpg"
+                  alt="woman"
+                  loading="lazy"
+                  class="img-say"
+                />
+                <h2 class="caption">Andrea Smith</h2>
+                <img
+                  src="./images/5-star.webp"
+                  alt="Five Star"
+                  loading="lazy"
+                  width="150"
+                />
+                <p>
+                  &quot;Masarap.&quot;
+                </p>
+              </label>
+              <label class="item" for="t-4">
+                <img
+                  src="./images/Catherine Parks.jpg"
+                  alt="woman"
+                  loading="lazy"
+                  class="img-say"
+                />
+                <h2 class="caption">Catherine Parks</h2>
+                <img
+                  src="./images/5-star.webp"
+                  alt="Five Star"
+                  loading="lazy"
+                  width="150"
+                />
+                <p>
+                  &quot;Masarap.&quot;
+                </p>
+              </label>
+              <label class="item" for="t-5">
+                <img
+                  src="./images/Jason Doe.jpg"
+                  alt="man"
+                  loading="lazy"
+                  class="img-say"
+                />
+                <h2 class="caption">Jason Doe</h2>
+                <img
+                  src="./images/5-star.webp"
+                  alt="Five Star"
+                  loading="lazy"
+                  width="150"
+                />
+                <p>
+                  &quot;Masarap.&quot;
+                </p>
+              </label>
+            </div>
+            <br />
+            <div class="dots">
+              <label for="t-1"></label>
+              <label for="t-2"></label>
+              <label for="t-3"></label>
+              <label for="t-4"></label>
+              <label for="t-5"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+   <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="foot col-12 col-sm-6 col-lg-4 col-xl-3">
+            <img
+              src="./images/Dahlialogo-min.png"
+              alt=""
+              class="footer-logo"
+              loading="lazy"
+            />
+            <p class="footer-p">
+              "Let me offer a food that you can't refuse." &mdash; Don Salvador
+            </p>
+          </div>
+          <div class="foot about col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div>About</div>
+            <a href="#">Meet Our Team</a>
+            <a href="#history">Our History</a>
+            <a href="#">Community Baking</a>
+          </div>
+          <div class="foot our col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div>Social</div>
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;Facebook</a
+            >
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-square-instagram"></i
+              >&nbsp;&nbsp;Instagram</a
+            >
+            <a href="https://www.linkedin.com/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;Linkedin</a
+            >
+            <a href="https://twitter.com/" target="_blank"
+              ><i class="fa-brands fa-square-twitter"></i>&nbsp;&nbsp;Twitter</a
+            >
+            <a href="https://discord.com/" target="_blank"
+              ><i class="fa-brands fa-discord discord"></i>&nbsp;Discord</a
+            >
+          </div>
+          <div class="foot contact col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div id="contact-US">Contact Us</div>
+            <a href="mailto:humbledog01@gmail.com"
+              ><i class="fa-solid fa-envelope"></i>
+              &nbsp;humbldog01@gmail.com</a
+            >
+            <a href="https://www.google.com/maps" target="_blank"
+              ><i class="fa-solid fa-map-location-dot"></i> &nbsp;Barangay 2, Jones Isabela & Santiago CIty</a
+            >
+            <a href="tel:+0643321233"
+              ><i class="fa-solid fa-phone-volume"></i>&nbsp; +63 123 456 789</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Footer Bottom -->
+  <p>
+    <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+    <span class="nowrap">Don Salvador</span>
+</p>
+
+</footer>
+</body>
+</html>
